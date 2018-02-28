@@ -18,5 +18,9 @@ app = Flask(__name__)
 def index():
     return "Hello, World (lets see how long a change takes III)!"
 
+@app.route('/BlackBox')
+def user():
+    return "This is Black Box!"
+
 if __name__ == '__main__':
     app.run(debug=True)
