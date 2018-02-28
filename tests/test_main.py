@@ -34,7 +34,7 @@ class MainTest(unittest.TestCase):
     def test_user(self):
         rv = self.app.get('/BlackBox')
         print(rv.data)
-        assert("Black" in rv.data.lower())
+        assert("black" in rv.data.lower())
 
 if __name__ == '__main__':
     unittest.main()
